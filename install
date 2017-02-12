@@ -1,0 +1,38 @@
+  %{-------------------------------------------------------------------+
+   | CHOP SHOP                                                         |
+   | Version: 1.0                                                      |
+   | File:                         ~/apps/chopshop/chopshop.sh         |
+   | DEPENDENCIES:                 ffmpeg                              |
+   |                                                                   |
+   | chopshop.sh                                                       |
+   | ----------------------------------------------------------------- |
+   |     this bash script takes an input video file, chops it up at    |
+   |     supplied interval, shuffles the clips, and merges them back   |
+   |     together randomly. all temporary files are cleaned up and     |
+   |     the output file is opened for preview. input file path        |
+   |     must not have spaces.					       |
+   |                                                                   |
+   | Setup:                                                            |
+   |                                                                   |
+   |    $ mkdir -p ~/apps/chopshop/temp                                |
+   |    $ cd chopshop (the directory this file is in)                  |
+   |    $ cp -r * ~/apps/chopshop                                      |
+   |    $ cd ~/apps/chopshop                                           |
+   |    $ chmod a+x chopshop.sh                                        |
+   |    $ ln -s ~/apps/chopshop/chopshop.sh  /usr/local/bin/chopshop   |
+   |    $ echo "PATH=/usr/local/bin/:\${PATH}" >> ~/.bash_profile      |
+   |                                                                   |
+   | Uninstall:                                                        |
+   |                                                                   |
+   |    $ rm -r ~/apps/chopshop                                        |
+   |    $ rm /usr/local/bin/chopshop                                   |
+   |                                                                   |
+   | Usage:                                                            |
+   |    $ chopshop [file] [interval in seconds] [outputname]           |
+   |                                                                   |
+   | Examples:                                                         |
+   |    $ chopshop input.mp4 1 output                                  |
+   |                                                                   |
+   | Public Domain Software -- Free to Use as You Like                 |
+   | infinitechill.net - By J. Volmer                                  |
+   +-------------------------------------------------------------------%}
