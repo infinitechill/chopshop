@@ -10,7 +10,7 @@
    |    supplied interval, shuffles the clips, and merges them back    |
    |    together randomly. all temporary files are cleaned up and      |
    |    the output file is opened for preview. input file path         |
-   |    must not have spaces.					                                 |
+   |    must not have spaces.                                          |
    |                                                                   |
    | Setup:                                                            |
    |                                                                   |
